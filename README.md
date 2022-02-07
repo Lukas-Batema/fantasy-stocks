@@ -1,1 +1,1 @@
-# fantasy-stocks
+# Fantasy Stocks
