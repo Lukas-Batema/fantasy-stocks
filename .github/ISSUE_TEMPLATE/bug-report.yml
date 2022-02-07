@@ -36,7 +36,7 @@ body:
         - N/A
     validations:
       required: true
-  - type textarea
+  - type: textarea
     id: logs
     attributes:
       label: Debug Log Output
