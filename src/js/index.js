@@ -7,7 +7,7 @@ for (let i = 0; i <= 365; i++) {
     let result = await stocks.timeSeries({
       symbol: 'GTLB',
       interval: '1day',
-      amount: 365
+      amount: 1
     });
 
     console.log(result);
