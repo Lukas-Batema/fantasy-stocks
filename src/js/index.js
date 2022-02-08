@@ -1,4 +1,4 @@
-import Stocks from 'stocks.js';
+const Stocks = require('stocks.js');
 
 const stocks = new Stocks('FWEGZI6T908UAAMF');
 
