@@ -6,7 +6,7 @@ for (let i = 0; i <= 365; i++) {
   setInterval(async test => {
     let result = await stocks.timeSeries({
       symbol: 'GTLB',
-      interval: '1day',
+      interval: 'daily',
       amount: 1
     });
 
