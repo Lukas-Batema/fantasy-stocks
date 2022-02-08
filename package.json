@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "stocks.js": "^0.0.19"
+  }
+}
