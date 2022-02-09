@@ -1,4 +1,6 @@
 FROM nginx:alpine
+RUN apk add --no-cache nodejs npm
+
 COPY docs /usr/share/nginx/html
 
 # Make Directorty of `static` and COPY it
@@ -9,5 +11,4 @@ COPY docs /usr/share/nginx/html
 RUN mkdir /usr/share/nginx/html/src
 COPY src /usr/share/nginx/html/src
 
-RUN apk add --no-cache nodejs npm
 RUN node /src/js/index.js
