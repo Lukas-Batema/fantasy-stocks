@@ -1,10 +1,6 @@
-* {
-  font-family: BlinkMacSystemFont;
-  transition: all 0.2s ease;
-}
-
 body {
   background-color: rgba(0, 63, 77, 1.00);
+  font-family: BlinkMacSystemFont;
 }
 
 .topnav ul, .footer ul {
