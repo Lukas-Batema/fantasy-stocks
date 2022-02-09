@@ -9,6 +9,7 @@ COPY docs /usr/share/nginx/html
 RUN mkdir /usr/share/nginx/html/src
 COPY src /usr/share/nginx/html/src
 
+RUN cd /usr
 RUN ls
 
 FROM node:alpine
