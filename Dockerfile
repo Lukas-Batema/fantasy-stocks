@@ -10,4 +10,5 @@ RUN mkdir /usr/share/nginx/html/src
 COPY src /usr/share/nginx/html/src
 
 FROM node:alpine
-RUN node /js/index.js
+RUN cd /src/js
+RUN /index.js
