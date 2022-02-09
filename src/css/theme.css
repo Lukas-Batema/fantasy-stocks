@@ -1,1 +1,46 @@
-/* Not in use */
+* {
+  font-family: BlinkMacSystemFont;
+  transition: all 0.2s ease;
+}
+
+body {
+  background-color: rgba(0, 63, 77, 1.00);
+}
+
+.topnav ul, .footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(2, 80, 255, 1.00);
+  width: 100%;
+}
+
+.topnav li, .footer li {
+  float: left;
+}
+
+.topnav li a, .topnav li a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: rgba(99, 60, 245, 1.00);
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 0;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  color: rgba(100, 255, 255);
+  background-color: rgba(25, 100, 255);
+}
+
+.topnav .active {
+  color: rgba(73, 25, 255);
+  background-color: rgba(0, 25, 105);
+}
