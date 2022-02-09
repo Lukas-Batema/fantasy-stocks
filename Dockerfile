@@ -9,5 +9,7 @@ COPY docs /usr/share/nginx/html
 RUN mkdir /usr/share/nginx/html/src
 COPY src /usr/share/nginx/html/src
 
+RUN ls
+
 FROM node:alpine
-RUN node ~/src/js/index.js
+RUN node /src/js/index.js
