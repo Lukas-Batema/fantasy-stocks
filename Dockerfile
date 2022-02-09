@@ -1,5 +1,5 @@
 FROM node:alpine
-RUN node ../src/js/index.js
+RUN node src/js/index.js
 
 FROM nginx:alpine
 COPY docs /usr/share/nginx/html
