@@ -9,7 +9,7 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: rgba(2, 80, 255, 1.00);
-  width: 100%;
+  width: 100vw;
 }
 
 .topnav li, .footer li {
