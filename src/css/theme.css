@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(0, 63, 77, 0.00);
+  background-color: rgb(0, 63, 77);
   font-family: BlinkMacSystemFont;
 }
 
@@ -8,8 +8,8 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(2, 80, 255, 1.00);
-  width: 100%;
+  background-color: rgb(34, 76, 173);
+  width: 100vw;
 }
 
 .topnav li, .footer li {
@@ -21,7 +21,7 @@ body {
   text-align: center;
   padding: 10px;
   text-decoration: none;
-  color: rgba(99, 60, 245, 1.00);
+  color: rgb(40, 145, 194);
 }
 
 li a {
@@ -32,8 +32,8 @@ li a {
 }
 
 li a:hover:not(.active) {
-  color: rgba(100, 255, 255);
-  background-color: rgba(25, 100, 255);
+  color: rgb(22, 43, 163);
+  background-color: rgb(109, 152, 238);
 }
 
 .topnav .active {
