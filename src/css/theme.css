@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(0, 63, 77, 1.00);
+  background-color: rgba(0, 63, 77, 0.00);
   font-family: BlinkMacSystemFont;
 }
 
@@ -9,7 +9,7 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: rgba(2, 80, 255, 1.00);
-  width: 100vw;
+  width: 100%;
 }
 
 .topnav li, .footer li {
