@@ -1,7 +1,7 @@
 const Stocks = require('stocks.js');
 const stocks = new Stocks('FWEGZI6T908UAAMF');
 
-setInterval(async () => {
+setInterval(async UwU => {
   let gtlbResult = await stocks.timeSeries({
     symbol: 'GTLB',
     interval: '5min',
