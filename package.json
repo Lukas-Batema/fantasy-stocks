@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "stocks.js": "^0.0.19"
+    "request": "^2.88.2"
   }
 }
