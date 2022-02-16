@@ -4,13 +4,11 @@ const stocks = new Stocks('FWEGZI6T908UAAMF');
 setInterval(async () => {
   let gtlbResult = await stocks.timeSeries({
     symbol: 'GTLB',
-    interval: '1min',
+    interval: '5min',
     amount: 1
   });
 
-  let gtlbResultFormat = gtlbResult.keys
-
   console.log('GTLB (GitLab):');
-  console.log(gtlbResultFormat);
+  console.log(gtlbResult);
   console.log("----------");
-}, 1000 * 1 * 60 * 1);
+}, 1000 * 1 * 60 * 5);
