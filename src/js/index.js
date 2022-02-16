@@ -8,6 +8,9 @@ setInterval(async () => {
     amount: 1
   });
 
+  let gtlbFormatResult = await toString(gtlbResult).substring(2, 7);
+
   console.log('GTLB (GitLab):');
-  console.log(gtlbResult);
+  console.log(gtlbFormatResult);
+  console.log("----------");
 }, 1000 * 1 * 60 * 1);
