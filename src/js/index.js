@@ -9,14 +9,14 @@ setInterval(async () => {
   });
 
   let gtlbFormatResult = gtlbResult
-                          .keys([{
-                            close,
-                            high,
-                            low,
-                            open,
-                            volume,
-                            date
-                          }])
+                          .keys(
+                            this.close,
+                            this.high,
+                            this.low,
+                            this.open,
+                            this.volume,
+                            this.date
+                          )
                           .toString()
                           .substring(2, 7);
 
