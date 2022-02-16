@@ -8,8 +8,7 @@ setInterval(async () => {
     amount: 1
   });
 
-  let gtlbFormatResult = Object.toString(gtlbResult).substring(2, 7);
-
+  let gtlbFormatResult = Array.toString(gtlbResult).substring(2, 7);
   console.log('GTLB (GitLab):');
   console.log(gtlbFormatResult);
   console.log("----------");
