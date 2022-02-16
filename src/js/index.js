@@ -8,15 +8,15 @@ setInterval(async () => {
     amount: 1
   });
 
-  let gtlbFormatResult = Object
-                          .keys(gtlbResult[{
+  let gtlbFormatResult = gtlbResult
+                          .keys(
                             close,
                             high,
                             low,
                             open,
                             volume,
                             date
-                          }])
+                          )
                           .toString()
                           .substring(2, 7);
 
