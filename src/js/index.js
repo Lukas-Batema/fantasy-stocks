@@ -1,5 +1,5 @@
 const request = require('request');
-let url = 'https://www.alphavantage.co/query?function=function=GLOBAL_QUOTE&symbol=GTLB&apikey=FWEGZI6T908UAAMF';
+let url = 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=GTLB&apikey=FWEGZI6T908UAAMF';
 
 request.get({
   url: url,
