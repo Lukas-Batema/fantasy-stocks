@@ -8,19 +8,13 @@ setInterval(async () => {
     amount: 1
   });
 
-  let gtlbFormatResult = gtlbResult
-                          .values(
-                            this.close,
-                            this.high,
-                            this.low,
-                            this.open,
-                            this.volume,
-                            this.date
-                          )
-                          .toString()
-                          .substring(2, 7);
+  let gtlbResultPull = gtlbResult
+                        .entries()
+                        .values();
+
+  let gtlbFormattedResult = toString(gtlbFormatResult);
 
   console.log('GTLB (GitLab):');
-  console.log(gtlbFormatResult);
+  console.log(gtlbFormattedResult);
   console.log("----------");
 }, 1000 * 1 * 60 * 1);
