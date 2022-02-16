@@ -8,9 +8,7 @@ setInterval(async () => {
     amount: 1
   });
 
-  let gtlbResultFormat = gtlbResult
-                          .entries()
-                          .toString();
+  let gtlbResultFormat = gtlbResult.keys().toString();
 
   console.log('GTLB (GitLab):');
   console.log(gtlbResultFormat);
