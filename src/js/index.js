@@ -8,7 +8,17 @@ setInterval(async () => {
     amount: 1
   });
 
-  let gtlbFormatResult = Object.keys(gtlbResult).toString().substring(2, 7);
+  let gtlbFormatResult = Object
+                          .keys(gtlbResult[{
+                            close,
+                            high,
+                            low,
+                            open,
+                            volume,
+                            date
+                          }])
+                          .toString()
+                          .substring(2, 7);
 
   console.log('GTLB (GitLab):');
   console.log(gtlbFormatResult);
