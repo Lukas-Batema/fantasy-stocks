@@ -9,7 +9,7 @@ setInterval(async () => {
   });
 
   let gtlbFormatResult = gtlbResult
-                          .keys(
+                          .values(
                             close,
                             high,
                             low,
