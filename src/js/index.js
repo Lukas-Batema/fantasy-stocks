@@ -13,6 +13,8 @@ setInterval(() => {
     symbol = 'MSFT';
   } else if (randSymbol === 3) {
     symbol = 'APPL';
+  } else if (randSymbol === 4) {
+    symbol = 'GOOGL';
   }
 
   var url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${process.env.API_KEY}`;
