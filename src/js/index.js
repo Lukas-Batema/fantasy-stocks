@@ -30,4 +30,4 @@ setInterval(() => {
       console.log(`${symbol}:`, data);
     }
   });
-}, 1000 * 1 * 60 * 1);
+}, 1000 * 1 * 60 * 5);
