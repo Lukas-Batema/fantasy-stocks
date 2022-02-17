@@ -3,7 +3,7 @@ let url = 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=GTLB&a
 
 request.get({
   url: url,
-  json: true,
+  json: false,
   headers: { 'User-Agent': 'request' }
 }, (err, res, data) => {
   if (err) {
