@@ -3,7 +3,7 @@ const request = require('request');
 setInterval(() => {
   let randSymbol = Math.round(Math.random() * 5);
 
-  var symbol = '^DJI';
+  var symbol;
 
   if (randSymbol === 0) {
     symbol = 'GTLB';
