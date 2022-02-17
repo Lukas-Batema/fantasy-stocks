@@ -3,22 +3,19 @@ const request = require('request');
 setInterval(() => {
   let randSymbol = Math.round(Math.random() * 5);
 
-  let symbol = '^DJI';
-  let url = 'https://www.alphavantage.co/'
+  var symbol = '^DJI';
 
   if (randSymbol === 0) {
     symbol = 'GTLB';
-    url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${process.env.API_KEY}`;
   } else if (randSymbol === 1) {
     symbol = 'LAC';
-    url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${process.env.API_KEY}`;
   } else if (randSymbol === 2) {
     symbol = 'MSFT';
-    url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${process.env.API_KEY}`;
   } else if (randSymbol === 3) {
     symbol = 'APPL';
-    url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${process.env.API_KEY}`;
   }
+
+  var url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${process.env.API_KEY}`;
 
   request.get({
     url: url,
