@@ -29,7 +29,7 @@ setInterval(() => {
     } else if (res.statusCode !== 200) {
       console.log('Status:', res.statusCode);
     } else {
-      console.log(`${symbol}:`, data);
+      console.log(`${symbol}:\n`, data);
     }
   });
 }, 1000 * 1 * 60 * 5);
