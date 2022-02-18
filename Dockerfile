@@ -1,3 +1,4 @@
+# Temporary NPM install below...
 FROM node:alpine
 RUN npm install -g --save request
 
