@@ -3,7 +3,7 @@ const request = require('request');
 function index() {
   let searchBar = document.getElementById('search-bar').innerHTML;
 
-  let search = searchBar.valueOf().toUpperCase();
+  let search = searchBar.valueOf;
 
   let url = `https://www.alphavantage.co/query?function=SYMBOL_SEARCH&symbol=${search}&apikey=${process.env.API_KEY}`;
 
