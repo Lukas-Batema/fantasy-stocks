@@ -10,4 +10,4 @@ RUN mkdir /usr/share/nginx/html/src
 COPY src /usr/share/nginx/html/src
 
 FROM node:alpine
-CMD npm i --save request
+RUN npm install -g --save request
