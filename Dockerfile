@@ -9,5 +9,5 @@ COPY docs /usr/share/nginx/html
 RUN mkdir /usr/share/nginx/html/src
 COPY src /usr/share/nginx/html/src
 
-FROM npm:alpine
+FROM nodejs:alpine
 RUN npm i --save request
