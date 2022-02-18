@@ -12,7 +12,7 @@ setInterval(() => {
   } else if (randSymbol === 2) {
     symbol = 'MSFT';
   } else if (randSymbol === 3) {
-    symbol = 'APPL';
+    symbol = 'AAPL';
   } else if (randSymbol === 4) {
     symbol = 'GOOGL';
   }
