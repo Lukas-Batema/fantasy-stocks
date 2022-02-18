@@ -1,24 +1,20 @@
-const Stocks = require('stocks.js');
+const request = require('request');
 
-const stocks = new Stocks('FWEGZI6T908UAAMF');
+function index() {
+  let search = document.getElementById('search-bar').innerHTML;
+  let url = `https://www.alphavantage.co/query?function=SYMBOL_SEARCH&symbol=${search}&apikey=${process.env.API_KEY}`;
 
-// Get the stats for a number of different stocks, once per day.
-setInterval(async dailyStats => {
-  let gtlbDailyResult = await stocks.timeSeries({
-    symbol: 'GTLB',
-    interval: 'daily',
-    amount: 1
+  request.get({
+    url: url,
+    json: true,
+    headers: { 'User-Agent': 'request' }
+  }, (err, res, data) => {
+    if (err) {
+      console.log('Error:', err);
+    } else if (res.statusCode !== 200) {
+      console.log('Status:', res.statusCode);
+    } else {
+      console.log(`${search}:\n`, data);
+    }
   });
-
-  // Log the GTLB daily stock stats in console for now
-  console.log(gtlbDailyResult);
-
-  let applDailyResult = await stocks.timeSeries({
-    symbol: 'APPL',
-    interval: 'daily',
-    amount: 1
-  });
-
-  // Log the APPL daily stock stats in console for now
-  console.log(applDailyResult);
-}, 1000 * 60 * 60 * 24);
+}

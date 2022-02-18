@@ -9,13 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.00; user-scalable=false" />
 
     <!-- JavaScript -->
-    <script type="module" src="../src/js/index.js"></script>
+    <script src="../src/js/index.js" type="module"></script>
 
     <!-- CSS -->
     <link type="text/css" rel="stylesheet" href="../src/css/theme.css" />
   </head>
 
-  <body>
+  <body onload="index();">
     <div class="topnav">
       <ul>
         <li><a class="active" href="javascript:void(0)">Home</a></li>
@@ -26,7 +26,7 @@
     </div>
 
     <div class="middle">
-      <p>test</p>
+      <input type="search" id="search" />
     </div>
 
     <footer class="footer">
