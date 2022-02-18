@@ -1,7 +1,8 @@
 const request = require('request');
 
 function index() {
-  let search = document.getElementById('search-bar').outerText.toUpperCase();
+  let searchBar = document.getElementById('search-bar');
+  let search = searchBar.outerHTML.toUpperCase().valueOf()
   let url = `https://www.alphavantage.co/query?function=SYMBOL_SEARCH&symbol=${search}&apikey=${process.env.API_KEY}`;
 
   request.get({
